@@ -6,7 +6,7 @@ A declaração de uma função tem de estar sempre antes de a função ser chama
 
 ### Ex:
 
-````
+```c++
 #include <iostream>
 using namespace std;
 
@@ -18,11 +18,11 @@ int main() {
   testFunction();
   return 0;
 }
-````
+```
 
 Seria igual a:
 
-````
+```c++
 #include <iostream>
 using namespace std;
 
@@ -36,4 +36,4 @@ int main() {
 void testFunction() {
   cout << "Hello World!" << endl;
 }
-````
+```
