@@ -41,3 +41,12 @@ void testFunction() {
 ## 5.8. 
 
 Ao passar um parâmetro por _reference_ o seu valor pode ser modificado dentro da função enquanto que ao passar um parâmetro por _constant reference_ o seu valor não pode ser modificado dentro da função e apenas lido _(reference - **read/write** , constant reference - **read** )_ .
+
+
+## 5.10.
+
+O valor _default_ de `b` foi declarado antes de `c` que não tem valor _default_ . O correto seria:
+
+```c++
+int f(int a, int c, int b=0);
+```
