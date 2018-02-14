@@ -1,10 +1,10 @@
 # 5. Functions
 
-##5.3.
+## 5.3.
 
 A declaração de uma função tem de estar sempre antes de a função ser chamada sendo que pode ser definida mais tarde.
 
-###Ex:
+### Ex:
 
 ````
 #include <iostream>
