@@ -8,6 +8,8 @@ int main() {
   cout << "Escreve 4 números" << endl;
   cin >> a >> b >> c >> d;
   cout << "O menor número é " << min(a, b, c, d) << endl;
+
+  return 0;
 }
 
 int min(int a, int b, int c, int d) {
