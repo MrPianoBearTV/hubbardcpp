@@ -37,3 +37,7 @@ void testFunction() {
   cout << "Hello World!" << endl;
 }
 ```
+
+## 5.8. 
+
+Ao passar um parâmetro por _reference_ o seu valor pode ser modificado dentro da função enquanto que ao passar um parâmetro por _constant reference_ o seu valor não pode ser modificado dentro da função e apenas lido _(reference - **read/write** , constant reference - **read** )_ .
