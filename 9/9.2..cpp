@@ -18,7 +18,7 @@ int main() {
   cout << "s.substr(6, 3)" << s.substr(6, 3) << endl;  // faz print da sub-string que começa na posição 6 e acaba na posição 9: "DEF" //Nota: nas soluções está s.subtr(3, 6) em vez de s.subtr(6, 3)
   s += "abcde";                                        // acrescenta a string "abcde" à string s, passando a string s a ser: "ABCDEFzNOPabcde"
   cout << "s = " << s << endl;
-  string part(s, 4, 8);                                // define a string part como a substring que começa na posição 4 e acaba na posição 8, sendo assim: "EFzNO"
+  string part(s, 4, 8);                                // define a string part como a substring que começa na posição 4 e tem length 8, sendo assim: "EFzNOPab"
   cout << "part = " << part << endl;
   string stars(8, '*');                                // define a string stars como 8x o caracter '*', sendo assim: "********"
   cout << "stars = " << stars << endl;
