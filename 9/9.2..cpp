@@ -13,8 +13,8 @@ int main() {
   cout << "s -> " << s << endl;
   s.erase(6, 4);                                       // muda a string s para: "ABCDEFzNOP"     // Nota: nas soluções está s.erase(2, 4) em vez de s.erase(6,4)
   cout << "s -> " << s << endl;
-  cout << "s.find(\"!\") -> " << s.find("!") << endl;  // faz print da localização do caracter '!', mas como este não se encontra na string faz print do comprimento da string: "10"
-  cout << "s.find(\"?\") -> " << s.find("?") << endl;  // faz print da localização do caracter '?', mas como também não se encontra na string faz print do seu comprimento: "10"
+  cout << "s.find(\"!\") -> " << s.find("!") << endl;  // faz print da localização do caracter '!', mas como este não se encontra na string faz print do npos "18446744073709551615", que é maior long unsigned e corresponde a "-1".
+  cout << "s.find(\"?\") -> " << s.find("?") << endl;  // faz print da localização do caracter '?', mas como também não se encontra na string faz print do npos "18446744073709551615", que é maior long unsigned e corresponde a "-1".
   cout << "s.substr(6, 3)" << s.substr(6, 3) << endl;  // faz print da sub-string que começa na posição 6 e acaba na posição 9: "DEF" //Nota: nas soluções está s.subtr(3, 6) em vez de s.subtr(6, 3)
   s += "abcde";                                        // acrescenta a string "abcde" à string s, passando a string s a ser: "ABCDEFzNOPabcde"
   cout << "s = " << s << endl;
