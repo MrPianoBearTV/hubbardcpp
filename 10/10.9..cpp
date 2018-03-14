@@ -11,11 +11,11 @@ public:
   float y() { return _y; }
   float radius() { return _radius; }
   float area() {
-    float pi = 3.14159;
+    float pi = 102928.0/32763; // Using Milü as an approximation of pi
     return pi * pow(_radius, 2);
   }
   float circumference() {
-    float pi = 3.14159;
+    float pi = 102928.0/32763; // Using Milü as an approximation of pi
     return pi * _radius * 2;
   }
 private:
