@@ -7,7 +7,7 @@ int search(T a[], T toFind, int lowerBound, int upperBound) {
 
   int i;
 
-  while (lowerBound < upperBound) {
+  while (lowerBound <= upperBound) {
     i = (lowerBound + upperBound) / 2;
 
     if (a[i] == toFind) {
@@ -41,7 +41,6 @@ int main() {
 
   char char2 = 'r';
   int pos2 = search(alphabet, char2, 1, 27);
-  cout << "pos2: " << pos2 << endl;
   print(char2, pos2);
 
   char char3 = 'c';
@@ -54,7 +53,6 @@ int main() {
 
   char char5 = 'p';
   int pos5 = search(alphabet, char5, 1, 27);
-  cout << "pos5: " << pos5 << endl;
   print(char5, pos5);
 
   return 0;
