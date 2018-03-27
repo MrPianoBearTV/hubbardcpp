@@ -3,11 +3,7 @@ using namespace std;
 
 template <class T>
 T min(T& x, T& y) {
-  if (x < y) {
-    return x;
-  }
-
-  return y;
+  return (x < y ? x : y);
 }
 
 int main() {
